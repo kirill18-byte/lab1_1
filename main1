@@ -1,0 +1,59 @@
+#include <iostream>
+using namespace std;
+
+int main() 
+{
+    //14
+    int A, B, C;
+
+    cout << "Введіть значення A, B, C: ";
+    cin >> A >> B >> C;
+
+    // Збережемо початкове значення A
+    int temp = A;
+
+    // Перемішення 
+    A = C;
+    C = B;
+    B = temp;
+
+    cout << "Нові:" << endl;
+    cout << "A = " << A << endl;
+    cout << "B = " << B << endl;
+    cout << "C = " << C << endl;
+    
+    
+    //24
+   double  X, Y;
+
+    cout << "Введіть кількість кілограмів X: ";
+    cin >> X;
+
+    cout << "Введіть вартість X кг цукерок (A): ";
+    cin >> A;
+
+    cout << "Введіть кількість кілограмів Y: ";
+    cin >> Y;
+
+    // Обчислення вартості 1 кг
+    double price_per_kg = A / X;
+
+    // Обчислення вартості Y кг
+    double price_Y = price_per_kg * Y;
+
+    cout << "1 кг цукерок коштує: " << price_per_kg << " грн" << endl;
+    cout << Y << " кг цукерок коштують: " << price_Y << " грн" << endl;
+    
+    //35
+    double a, b, c;
+
+    cout << "Введіть три числа (a, b, c): ";
+    cin >> a >> b >> c;
+
+    // Обчислюємо суму 
+    double sum = a * a + b * b + c * c;
+
+    cout << "Сума квадратів чисел = " << sum << endl;
+
+    return 0;
+}
